@@ -5,15 +5,15 @@ import { Grid, Typography, Paper, Box } from "@mui/material";
 import { useRef } from "react";
 
 import face from "./IMG_6722.JPG"
+import peter from "./peter.jpeg"
 
 function App() {
   let about_scroller = useRef()
   let projects_scroller = useRef()
-  // <Typography sx={{fontFamily:"Helvetica", mt:2, mx:2}} variant="body">about</Typography>
   return(
     <>
     <HomeBar about={about_scroller} projects={projects_scroller} />
-    <Grid container columns={12} sx={{my:2}}>
+    <Grid container justifyContent="center" columns={12} sx={{my:2}}>
       <Grid item ref={about_scroller} xs={12} >
         <Grid container columns={12} justifyContent="center" spacing={4} sx={{my:2}}>
           <Grid item xs={4}>
@@ -32,11 +32,15 @@ function App() {
           <Grid item xs={4}><img src={face} alt="facePic" style={{width:400, height:400}} /></Grid>
         </Grid>
       </Grid>
-      <Grid item ref={projects_scroller} xs={12}>
-        <Grid container>
+      <Grid item ref={projects_scroller} justifyContent="center" ><Typography sx={{fontFamily:"Helvetica", alignText:"center"}} variant="h4" component="center">Projects</Typography></Grid>
+      <Grid item xs={12}>
+        <Grid container columns={12} justifyContent="center" >
           <Box sx={{mx:4, my:2}}>
             <Paper elevation={3}>
-              <Typography sx={{fontFamily:"Helvetica", mt:2, mx:2}} variant="body">projects</Typography>
+              <Grid container columns={12}>
+                <Grid xs={4}><img src={peter} alt="ZotScheduler" style={{width:200, height:100}} /></Grid>
+                <Grid xs={8}><Typography sx={{mx:2, fontFamily:"Helvetica"}} variant="h6" component="h6">Hello!</Typography></Grid>
+              </Grid>
             </Paper>
           </Box>
         </Grid>

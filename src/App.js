@@ -1,20 +1,23 @@
 import { HomeBar } from "./components/toolbar";
+import ProjectCard from "./components/projectCard";
 
-import { Grid, Typography, Paper, Box } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 
 import { useRef } from "react";
 
 import face from "./IMG_6722.JPG"
 import peter from "./peter.jpeg"
+import fsim from "./FootballSim.png"
+import fd from "./FIFADraft.png"
+import tf_logo from "./tflogo.jpeg"
 
 function App() {
-  let about_scroller = useRef()
   let projects_scroller = useRef()
   return(
     <>
-    <HomeBar about={about_scroller} projects={projects_scroller} />
-    <Grid container justifyContent="center" columns={12} sx={{my:2}}>
-      <Grid item ref={about_scroller} xs={12} >
+    <HomeBar projects={projects_scroller} />
+    <Grid container  justifyContent="center" columns={12} sx={{my:2}}>
+      <Grid item  xs={12} >
         <Grid container columns={12} justifyContent="center" spacing={4} sx={{my:2}}>
           <Grid item xs={4}>
             <Typography sx={{fontFamily:"Helvetica"}} variant="h4" component="h4">Nathan Monette</Typography>
@@ -26,24 +29,33 @@ function App() {
               Multi-Agent Reinforcment Learning under Dr. Ioannis Panageas.
               <br/><br/>
               Broadly, my research interests lie in games and deep learning, particularly deep reinforcement learning. As is observable by my projects,
-              I have a particular interest in European football/soccer.
+              I have a particular interest in European football/soccer and the associated video game FIFA. I am also interested in various aspects of Full-Stack software development.
             </Typography>
           </Grid>
           <Grid item xs={4}><img src={face} alt="facePic" style={{width:400, height:400}} /></Grid>
         </Grid>
       </Grid>
-      <Grid item ref={projects_scroller} justifyContent="center" ><Typography sx={{fontFamily:"Helvetica", alignText:"center"}} variant="h4" component="center">Projects</Typography></Grid>
-      <Grid item xs={12}>
-        <Grid container columns={12} justifyContent="center" >
-          <Box sx={{mx:4, my:2}}>
-            <Paper elevation={3}>
-              <Grid container columns={12}>
-                <Grid xs={4}><img src={peter} alt="ZotScheduler" style={{width:200, height:100}} /></Grid>
-                <Grid xs={8}><Typography sx={{mx:2, fontFamily:"Helvetica"}} variant="h6" component="h6">Hello!</Typography></Grid>
-              </Grid>
-            </Paper>
-          </Box>
-        </Grid>
+      <Grid container ref={projects_scroller} justifyContent="center" columns={12} >
+        <ProjectCard title="ZotScheduler" imageSrc={peter} tags={["Web Scraping", "Machine Learning", "Python", "JavaScript"]}>
+          ZotScheduler is a web app created for Hack at UCI, where our team won runner-up. 
+          <br/><br/>
+          It uses tree-ensemble regression models 
+          and search algorithms to find the optimal schedule for a UCI student given a set of potential classes for the upcoming quarter.
+        </ProjectCard>
+        <ProjectCard title="FIFARank" imageSrc={tf_logo} tags={["Machine Learning", 'Python', "TensorFlow", "Data Scraping"]}>
+          FIFARank is a learning project that scraped popularity and player data from FIFA websites and used Deep Learning and Tree models 
+          to rank players in terms of their "meta" quality.
+          <br/><br/>
+          The GitHub repository's link is {<a href="https://github.com/nmonette/FIFARank" >here</a>}.
+        </ProjectCard>
+        <ProjectCard title="FootballSim" imageSrc={fsim} tags={["Unity", 'C#']}>
+          FootballSim is a bare-bones European Football simulator made for a future project exploring the reward tradeoffs surrounding the offside trap in Football.
+        </ProjectCard>
+        <ProjectCard title="FIFADraft" imageSrc={fd} tags={["React", "JavaScript", "Firebase"]}>
+          FIFADraft implements a fantasy soccer draft for custom FIFA tournaments (video game) through a "lobby" system that connects users together through a common link. 
+          <br/><br/>
+          The website's link is {<a href="https://nmonette.github.io/FIFADraft" >here</a>}.
+        </ProjectCard>
       </Grid>
     </Grid>
     </>

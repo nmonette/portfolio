@@ -51,12 +51,12 @@ function App() {
         <ProjectCard title="FootballSim" imageSrc={fsim} tags={["Unity", 'C#']}>
           FootballSim is a bare-bones European Football simulator made for a future project exploring the reward tradeoffs surrounding the offside trap in Football.
           <br/><br/>
-          Download it {<a href="https://nmonette.github.io/FIFADraft" >here</a>}.
+          Download it {<a href="https://drive.google.com/drive/folders/17hfz6O7l6XMdUyuRH8UXeDWKBeREgf-r?usp=sharing" >here</a>}.
         </ProjectCard>
         <ProjectCard title="FIFADraft" imageSrc={fd} tags={["React", "JavaScript", "Firebase"]}>
           FIFADraft implements a fantasy soccer draft for custom FIFA tournaments (video game) through a "lobby" system that connects users together through a common link. 
           <br/><br/>
-          The website's link is {<a href="https://drive.google.com/drive/folders/17hfz6O7l6XMdUyuRH8UXeDWKBeREgf-r?usp=sharing" >here</a>}.
+          The website's link is {<a href="https://nmonette.github.io/FIFADraft" >here</a>}.
         </ProjectCard>
       </Grid>
     </Grid>

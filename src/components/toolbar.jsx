@@ -1,6 +1,6 @@
 import { Toolbar, AppBar, Button } from "@mui/material";
 
-export function HomeBar({ about, projects }) {
+export function HomeBar({ projects }) {
 
     return (
         <AppBar position="sticky" sx={{backgroundColor:"#a9a9a9"}}>

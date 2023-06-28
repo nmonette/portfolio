@@ -16,7 +16,7 @@ function App() {
   return(
     <>
     <HomeBar projects={projects_scroller} />
-    <Grid container  justifyContent="center" columns={12} sx={{my:2}}>
+    <Grid container  justifyContent="center" columns={12} sx={{my:2, flexGrow: 1, overflowX:"hidden", overflowY: "hidden"}}>
       <Grid item  xs={12} >
         <Grid container columns={12} justifyContent="center" spacing={4} sx={{my:2}}>
           <Grid item xs={4}>
@@ -35,8 +35,8 @@ function App() {
           <Grid item xs={4}><img src={face} alt="facePic" style={{width:400, height:400}} /></Grid>
         </Grid>
       </Grid>
-      <Grid container ref={projects_scroller} justifyContent="center" columns={12} >
-        <ProjectCard title="ZotScheduler" imageSrc={peter} tags={["Web Scraping", "Machine Learning", "Python", "JavaScript"]}>
+      <Grid container ref={projects_scroller} justifyContent="center" >
+        <ProjectCard title="ZotScheduler" imageSrc={peter} tags={["Web Scraping", "Machine Learning", "Python", "JavaScript"]} >
           ZotScheduler is a web app created for Hack at UCI, where our team won runner-up. 
           <br/><br/>
           It uses tree-ensemble regression models 

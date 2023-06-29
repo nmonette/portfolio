@@ -29,7 +29,7 @@ function App() {
               Multi-Agent Reinforcment Learning under Dr. Ioannis Panageas.
               <br/><br/>
               Broadly, my research interests lie in games and deep learning, particularly deep reinforcement learning. As is observable by my projects,
-              I have a particular interest in European football/soccer and the associated video game FIFA. I am also interested in various aspects of Full-Stack software development.
+              I have a passion for European football/soccer and the associated video game FIFA. I am also interested in various aspects of Full-Stack software development.
             </Typography>
           </Grid>
           <Grid item xs={4}><img src={face} alt="facePic" style={{width:400, height:400}} /></Grid>
@@ -37,24 +37,25 @@ function App() {
       </Grid>
       <Grid container ref={projects_scroller} justifyContent="center" >
         <ProjectCard title="ZotScheduler" imageSrc={peter} tags={["Web Scraping", "Machine Learning", "Python", "JavaScript"]} >
-          ZotScheduler is a web app created for Hack at UCI, where our team won runner-up. 
-          <br/><br/>
-          It uses tree-ensemble regression models 
+          ZotScheduler uses tree-ensemble regression models 
           and search algorithms to find the optimal schedule for a UCI student given a set of potential classes for the upcoming quarter.
+          <br/><br/>
+         I led the AI part of our project, culminating in a "Best AI Hack" award, as well as overall runner-up out of 60+ teams at HackUCI.
         </ProjectCard>
         <ProjectCard title="FIFARank" imageSrc={tf_logo} tags={["Machine Learning", 'Python', "TensorFlow", "Data Scraping"]}>
-          FIFARank is a learning project that scraped popularity and player data from FIFA websites and used Deep Learning and Tree models 
-          to rank players in terms of their "meta" quality.
+          FIFARank is a learning project using scraped popularity and player data from FIFA websites. By utilizing tree and deep learning methods 
+          I was able to rank players in the most recent FIFA video game (FIFA 23) in terms of their competitive desirability. 
           <br/><br/>
           The GitHub repository's link is {<a href="https://github.com/nmonette/FIFARank" >here</a>}.
         </ProjectCard>
         <ProjectCard title="FootballSim" imageSrc={fsim} tags={["Unity", 'C#']}>
-          FootballSim is a bare-bones European Football simulator made for a future project exploring the reward tradeoffs surrounding the offside trap in Football.
+          FootballSim is a simple European Football simulator that I made for a future project exploring the reward tradeoffs surrounding the offside trap in Football.
           <br/><br/>
           Download it {<a href="https://drive.google.com/drive/folders/17hfz6O7l6XMdUyuRH8UXeDWKBeREgf-r?usp=sharing" >here</a>}.
         </ProjectCard>
         <ProjectCard title="FIFADraft" imageSrc={fd} tags={["React", "JavaScript", "Firebase"]}>
-          FIFADraft implements a fantasy soccer draft for custom FIFA tournaments (video game) through a "lobby" system that connects users together through a common link. 
+          FIFADraft is a fantasy soccer draft app that I made for FIFA tournaments that assists with the creation of custom teams not already 
+          preset by the game. I incorporated database structuring that allows users in the same lobby to draft synchronously.
           <br/><br/>
           The website's link is {<a href="https://nmonette.github.io/FIFADraft" >here</a>}.
         </ProjectCard>

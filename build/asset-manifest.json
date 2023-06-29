@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.e6c13ad2.css",
-    "main.js": "/portfolio/static/js/main.31594eaa.js",
+    "main.js": "/portfolio/static/js/main.a7b639d3.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/IMG_6722.JPG": "/portfolio/static/media/IMG_6722.6f71d3e480a4e940049d.JPG",
     "static/media/FIFADraft.png": "/portfolio/static/media/FIFADraft.7d2860c5eb900d5e95aa.png",
@@ -10,11 +10,11 @@
     "static/media/tflogo.jpeg": "/portfolio/static/media/tflogo.2137806c1efd3a48bc5e.jpeg",
     "index.html": "/portfolio/index.html",
     "main.e6c13ad2.css.map": "/portfolio/static/css/main.e6c13ad2.css.map",
-    "main.31594eaa.js.map": "/portfolio/static/js/main.31594eaa.js.map",
+    "main.a7b639d3.js.map": "/portfolio/static/js/main.a7b639d3.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.31594eaa.js"
+    "static/js/main.a7b639d3.js"
   ]
 }

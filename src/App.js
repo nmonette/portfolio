@@ -35,7 +35,8 @@ function App() {
           <Grid item xs={4}><img src={face} alt="facePic" style={{width:400, height:400}} /></Grid>
         </Grid>
       </Grid>
-      <Grid container ref={projects_scroller} justifyContent="center" >
+      <Grid ref={projects_scroller} item><Typography variant="h3" component="h3" sx={{mt:40, fontFamily:"Helvetica"}}>Projects</Typography></Grid>
+      <Grid container justifyContent="center" alignItems="center" columns={12} sx={{mb:40, mt:"10%"}} style={{ minHeight: '100vh', transform: 'scale(1.2)'}}>
         <ProjectCard title="ZotScheduler" imageSrc={peter} tags={["Web Scraping", "Machine Learning", "Python", "JavaScript"]} >
           ZotScheduler uses tree-ensemble regression models 
           and search algorithms to find the optimal schedule for a UCI student given a set of potential classes for the upcoming quarter.

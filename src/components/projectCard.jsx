@@ -3,8 +3,7 @@ import { Grid, Paper, Typography, Box, Chip } from '@mui/material';
 
 const ProjectCard = ({ imageSrc, title, children, tags }) => {
   return (
-    <Grid container justifyContent="center" alignItems="center" style={{ minHeight: '100vh', transform: 'scale(1.2)' }}>
-      <Grid item xs={12} md={6}>
+      <Grid item xs={12} md={12} lg={12} sx={{mx:"20%", my:3}}>
         <Box sx={{ display: 'flex', justifyContent: 'center'}}>
           <Paper elevation={4} sx={{ p: 2 }}>
             <Grid container spacing={1} alignItems="center">
@@ -26,7 +25,6 @@ const ProjectCard = ({ imageSrc, title, children, tags }) => {
           </Paper>
         </Box>
       </Grid>
-    </Grid>
   );
 };
 

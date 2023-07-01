@@ -30,6 +30,8 @@ function About() {
               <br/><br/>
               Broadly, my research interests lie in games and deep learning, particularly deep reinforcement learning. As is observable by my projects,
               I have a passion for European football/soccer and the associated video game FIFA. I am also interested in various aspects of Full-Stack software development.
+              <br/><br/>
+              In my free time I play water polo, lift weights, and play the bass, alto saxophone, and ukelele. 
             </Typography>
           </Grid>
           <Grid item xs={4}><img src={face} alt="facePic" style={{width:400, height:400}} /></Grid>
@@ -84,7 +86,7 @@ function App() {
         path: "projects", 
         element: <Projects />,
     }
-], {shimErrors: true}) // , {basename:"localhost:3000/FIFADraft"}
+], {shimErrors: true}) 
 
    return (
         <RouterProvider router={router} basename={"/portfolio"} />

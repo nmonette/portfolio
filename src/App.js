@@ -22,14 +22,14 @@ function About() {
             <Typography sx={{fontFamily:"Helvetica"}} variant="h4" component="h4">Nathan Monette</Typography>
             <Typography sx={{fontFamily:"Helvetica"}} variant="body" component="em">[firstname] [lastname]1 at gmail dot com</Typography>
             <Typography sx={{fontFamily:"Helvetica", fontSize:18, mt:2}} variant="body" component="div">
-              I'm currently an undergraduate at the University of California Irvine, pursuing a B.S. in Computer Science with a minor in Mathematics.
+              I'm currently an undergraduate at the University of California Irvine, pursuing a B.S. in computer science with a minor in mathematics.
               <br/><br/>
-              I specialize in intelligent systems, which is UCI's AI/ML emphasis. I support that emphasis with research in Algorithmic Game Theory and
-              multi-agent reinforcment learning under Dr. Ioannis Panageas, as well as a minor in mathematics.
+              I specialize in intelligent systems, which is UCI's AI/ML emphasis. I support that emphasis with research in algorithmic game theory and
+              multi-agent reinforcment learning under Dr. Ioannis Panageas.
               <br/><br/>
               Broadly, my research interests lie in games and deep learning, particularly deep reinforcement learning. As is observable by my projects,
               I have a passion for football/soccer and the associated video game FIFA. Recently, I have taken an interest in robustness, 
-              meta-learning and unsupervised environment design.
+              meta-learning, and unsupervised environment design.
               <br/><br/>
               In my free time I play water polo, lift weights, and play the bass, alto saxophone, and ukelele. 
             </Typography>

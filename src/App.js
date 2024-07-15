@@ -1,7 +1,9 @@
 import { HomeBar } from "./components/toolbar";
 import ProjectCard from "./components/projectCard";
 
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, Link, IconButton } from "@mui/material";
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
 import face from "./IMG_6722.JPG"
@@ -22,19 +24,33 @@ function About() {
             <Typography sx={{fontFamily:"Helvetica"}} variant="h4" component="h4">Nathan Monette</Typography>
             <Typography sx={{fontFamily:"Helvetica"}} variant="body" component="em">[firstname] [lastname]1 at gmail dot com</Typography>
             <Typography sx={{fontFamily:"Helvetica", fontSize:18, mt:2}} variant="body" component="div">
-              I'm currently an undergraduate at the University of California Irvine, pursuing a B.S. in computer science with a minor in mathematics.
-              <br/><br/>
-              I specialize in intelligent systems, which is UCI's AI/ML emphasis. I support that emphasis with research in algorithmic game theory and
-              multi-agent reinforcment learning under Dr. Ioannis Panageas.
-              <br/><br/>
-              Broadly, my research interests lie in games and deep learning, particularly deep reinforcement learning. As is observable by my projects,
-              I have a passion for football/soccer and the associated video game FIFA. Recently, I have taken an interest in robustness, 
-              meta-learning, and unsupervised environment design.
-              <br/><br/>
-              In my free time I play water polo, lift weights, and play the bass, alto saxophone, and ukelele. 
+              I'm currently an undergraduate at the University of California Irvine, pursuing a B.S. in computer science with a minor in mathematics. 
+              I specialize in intelligent systems, which is UCI's AI/ML emphasis.
             </Typography>
+            <Typography sx={{fontFamily:"Helvetica", mt:"10pt"}} variant="h5" component="div">Research</Typography>
+            <Typography sx={{fontFamily:"Helvetica", fontSize:18, mt:1}} variant="body" component="div">
+            At UC Irvine, I do research in algorithmic game theory and multi-agent reinforcment learning under prof. 
+            <Link href="https://panageas.github.io/" underline="hover"> Ioannis Panageas</Link>.
+            </Typography>
+            <Typography sx={{fontFamily:"Helvetica", fontSize:18, mt:1}} variant="body" component="div">
+              <Typography sx={{color:"red"}} variant="body">As of 6/2024</Typography> I have joined  
+              <Link href="https://foersterlab.com/" underline="hover"> FLAIR</Link> as a research intern!
+              I am working on meta-reinforcement learning and its intersection with game theory and curriculum design. I am lucky to be working under 
+              the supervision of <Link href="https://www.jakobfoerster.com/" underline="hover">Jakob Foerster</Link> and 
+              <Link href="https://www.jakobfoerster.com/" underline="hover"> Matthew Jackson</Link>.
+            </Typography>
+            <center>
+                <IconButton size="large" href="https://github.com/nmonette">
+                  <GitHubIcon fontSize="inherit" />
+                </IconButton>
+                <IconButton size="large" href="https://linkedin.com/in/nathan-monette/">
+                  <LinkedInIcon fontSize="inherit" />
+                </IconButton>
+            </center>
           </Grid>
-          <Grid item xs={4}><img src={face} alt="facePic" style={{width:400, height:400}} /></Grid>
+          <Grid item xs={4}>
+            <img src={face} alt="facePic" style={{width:400, height:400}} />
+          </Grid>
         </Grid>
       </Grid>
     </Grid>

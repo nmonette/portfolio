@@ -1,0 +1,9 @@
+<br/><br/>
+              I support that emphasis with research in algorithmic game theory and
+              multi-agent reinforcment learning under prof. <Link href="https://panageas.github.io/" underline="hover">Ioannis Panageas</Link>.
+              <br/><br/>
+              Broadly, my research interests lie in games and deep learning, particularly deep reinforcement learning. As is observable by my projects,
+              I have a passion for football/soccer and the associated video game FIFA. Recently, I have taken an interest in robustness, 
+              meta-learning, and unsupervised environment design.
+              <br/><br/>
+              In my free time I play water polo, lift weights, and play the bass, alto saxophone, and ukelele. 
